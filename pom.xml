@@ -16,10 +16,29 @@
     <description>spring-framework</description>
     <modules>
         <module>stream-utils</module>
+        <module>BeanNameAware-and-BeanFactoryAware</module>
+        <module>access-File-from-Classpath</module>
+        <module>context-events</module>
+        <module>postconstruct-and-predestroy</module>
+        <module>scopes</module>
+        <module>version</module>
+        <module>reinitializebean</module>
+        <module>applicationcontext</module>
+        <module>factory-bean</module>
+        <module>autowire-generic-type</module>
+        <module>lookup</module>
+        <module>find-bean-with-custom-annotation</module>
+        <module>dynamically-autowire-bean</module>
+        <module>aop</module>
+        <module>aspectj</module>
+        <module>advice-types-in-spring</module>
+        <module>performance-monitor</module>
     </modules>
     <properties>
         <java.version>17</java.version>
         <commons-io.version>2.15.0</commons-io.version>
+        <java.version>17</java.version>
+        <aspectj-plugin.version>1.13.1</aspectj-plugin.version>
     </properties>
 
     <dependencies>
@@ -31,12 +50,17 @@
     </dependencies>
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>2.1.1</version>
+            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
