@@ -34,6 +34,7 @@
         <module>advice-types-in-spring</module>
         <module>performance-monitor</module>
         <module>Http-Message-Converters</module>
+        <module>spring-spel</module>
     </modules>
     <properties>
         <java.version>17</java.version>
